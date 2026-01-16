@@ -3,8 +3,8 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-//Add your code here
-	innerText="getsumBtn"
+//Add your code /
+	innerText="Monthly savings"
   
 };
 
