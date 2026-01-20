@@ -5,8 +5,20 @@ document.body.appendChild(getSumBtn);
 const getSum = () => {
 //Add your code /
 	innerText="Monthly savings"
-  
+
+ 
 };
 
 getSumBtn.addEventListener("click", getSum);
+
+
+
+
+
+
+
+
+	
+  
+
 
