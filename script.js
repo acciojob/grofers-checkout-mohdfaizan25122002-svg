@@ -5,6 +5,7 @@ document.body.appendChild(getSumBtn);
 const getSum = () => {
 //Add your code /
 	innerText="Monthly savings"
+	console.log("sum")
 
  
 };
