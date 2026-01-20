@@ -1,17 +1,26 @@
-const getSumBtn = document.createElement("button");
-getSumBtn.append("Get Total Price");
-document.body.appendChild(getSumBtn);
+const getSumBtn = document.getElementById("getSumBtn");
 
-const getSum = () => {
-//Add your code /
-	innerText="Monthly savings"
-	console.log("sum")
-	getSumbtn.innerText="Total: " +sum;
+getSumBtn.addEventListener("click", function () {
+  let sum = 0;
 
- 
-};
+  const prices = document.querySelectorAll(".price");
 
-getSumBtn.addEventListener("click", getSum);
+  prices.forEach(price => {
+    sum += Number(price.innerText);
+  });
+
+  const table = document.getElementById("table");
+
+  const tr = document.createElement("tr");
+  const td = document.createElement("td");
+
+  td.colSpan = 2;
+  td.innerText = "Total Price: Rs " + sum;
+
+  tr.appendChild(td);
+  table.appendChild(tr);
+});
+
 
 
 
