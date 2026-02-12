@@ -3,7 +3,7 @@ const getSumBtn = document.getElementById("getSumBtn");
 getSumBtn.addEventListener("click", function () {
   let sum = 0;
 
-  const prices = document.querySelectorAll(".price");
+  const prices = document.querySelectorAll(".prices");
 
   prices.forEach(price => {
     sum += Number(price.innerText);
