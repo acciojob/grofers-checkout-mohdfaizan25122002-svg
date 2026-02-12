@@ -12,6 +12,7 @@ getSumBtn.addEventListener("click", function () {
   const table = document.getElementById("table");
 
   const tr = document.createElement("tr");
+	tr.id="ans";
   const td = document.createElement("td");
 
   td.colSpan = 2;
